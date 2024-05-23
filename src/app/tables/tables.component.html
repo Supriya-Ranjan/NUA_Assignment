@@ -1,0 +1,16 @@
+<div class="card tableConatiner">
+    <table>
+        <thead>
+            <tr *ngFor="let name of columsNames"> 
+                <th>{{name}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of itemList">
+                <td>{{item?.work?.title}}</td>
+                <td>{{item?.work?.author_names[0]}}</td>
+                <td>{{item?.work?.first_publish_year}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
